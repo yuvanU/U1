@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/4b1cda401a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contacts</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Software Engineer</p>
+            <h1>Hi, This is Yuvan Raj from INDIA</h1>
+        </div>
+    </div>
+</div>
+<!-- ------about------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/Picsart_24-12-11_13-33-06-970.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p> I keep myself engaged throughout the day by exploring new technologies. 
+                    Thrives to do innovations which boosts me to do more. As an extrovert, I would love 
+                    to meet new people, so it will be easy for me to be a team player as well.
+                    Apart from being a professional, I like to listen to Music to realign my mind.
+                    Amid all other stuff, I find time for Physical Activities which will keep me 
+                    energitic. So, Welcome to my portfolio!!!</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab"  id="skills">
+                    <ul>
+                        <li><span>C,Python,Java</span><br>Website Development</li>
+                        <li><span>Web Development</span><br>Web App Development</li>
+                        <li><span>Video-Editing</span><br>Capcut,various Editing applications</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2024 - current intern</span><br>Frontend Development</li>
+                        <li><span>intern</span><br>Web App Development</li>
+                        <li><span>intern</span><br>Building Android/iOS apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023</span><br>Velammal Vidyalaya / Computer with Math</li>
+                        <li><span>2024 - current</span><br>B.tech Veltech Multitech Engineering College</li>
+                        <li><span>2020</span><br>Velammal Vidyalaya</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------------services------------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-fire"></i>
+                <h2>Web Design</h2>
+                <p>Web Designing is the process of planning , conceptualizing , and implementing the plan for
+                    designing a website in a way that is functional and offers a good user experience. 
+                    User experience is central to the web designing process. </p>
+                    <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-cloud-bolt"></i>
+                <h2>UI/UX Design</h2>
+                <p>UI/UX Design is a field that focuses on creating a positive user experience for a 
+                    product or service. The goal is to make the user interaction with a product or
+                    service easy , effecient , and enjoyable.</p>
+                    <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-droplet"></i>
+                <h2>App Design</h2>
+                <p>Applicatin design or app design refers to a process of designing the interactions
+                    of an user with an application and the applicatio interface. Designing is an integral part of the 
+                    overall design process.</p>
+                    <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------------contact---------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> yuvantheking46@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +91 9345986055</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Yuvanraj. Made by Yuvanraj.M </p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+</body>
+</html>
